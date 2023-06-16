@@ -35,13 +35,6 @@ class _Screen1State extends State<Screen1> {
                   isLightMode = v;
                   title = isLightMode ?  "Hello World" : "Bye World" ;
 
-                  // SwitchLogsModel logs = SwitchLogsModel(
-                  //   title: title,
-                  //   dateTime: DateTime.now(),
-                  //   mode: isLightMode,
-                  // );
-                  // logsOfSwitch.add(logs);
-
 
                 });
 
@@ -77,7 +70,7 @@ class _Screen1State extends State<Screen1> {
 
           Navigator.push(context, MaterialPageRoute(builder: (context) => Screen2(title: isLightMode ? "привет мир" : "пока мир", isLightMode: isLightMode),));
         },
-        child: Icon(Icons.arrow_forward_ios),
+        child: const Icon(Icons.arrow_forward_ios),
 
       ),
     );
